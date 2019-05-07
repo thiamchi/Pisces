@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{40268AB7-0FA9-4425-AF93-B5D2590AAD38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisces.Demo", "Pisces.Demo\Pisces.Demo.csproj", "{EB678B4E-7182-419F-9AF8-7617E2CF7001}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisces", "Pisces\Pisces.csproj", "{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}"
 EndProject
 Global
@@ -11,6 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB678B4E-7182-419F-9AF8-7617E2CF7001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB678B4E-7182-419F-9AF8-7617E2CF7001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB678B4E-7182-419F-9AF8-7617E2CF7001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB678B4E-7182-419F-9AF8-7617E2CF7001}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -18,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB678B4E-7182-419F-9AF8-7617E2CF7001} = {40268AB7-0FA9-4425-AF93-B5D2590AAD38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D68FD29E-F5DC-421D-96B6-C7681DC688EF}
