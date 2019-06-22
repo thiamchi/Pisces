@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:Pisces.Modules.MainMenu.Controls">
+    <HierarchicalDataTemplate x:Key="menuTemplate" ItemsSource="{Binding Children}">
+        <ContentPresenter Content="{Binding Path=Text}" RecognizesAccessKey="True"/>
+    </HierarchicalDataTemplate>
+</ResourceDictionary>

@@ -9,7 +9,7 @@
              d:DesignHeight="800" d:DesignWidth="600">
     <DockPanel Background="White">
         <StackPanel DockPanel.Dock="Top" Orientation="Vertical">
-            <Label Content="Hello"/>
+            <ContentControl cal:View.Model="{Binding MainMenu}"/>
         </StackPanel>
     </DockPanel>
 </UserControl>
