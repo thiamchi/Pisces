@@ -11,5 +11,26 @@
         <StackPanel DockPanel.Dock="Top" Orientation="Vertical">
             <ContentControl cal:View.Model="{Binding MainMenu}"/>
         </StackPanel>
+
+        <xcad:DockingManager DocumentsSource="{Binding Items}"
+                             ActiveContent="{Binding ActiveLayoutItem, Mode=TwoWay}">
+            <xcad:DockingManager.LayoutItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <ContentControl Grid.Row="1" cal:View.Model="{Binding}"
+                                        IsTabStop="False"/>
+                    </Grid>
+                </DataTemplate>
+            </xcad:DockingManager.LayoutItemTemplate>
+            <xcad:DockingManager.LayoutItemContainerStyle>
+                <Style TargetType="{x:Type xcad:LayoutItem}">
+                    <Setter Property="Title" Value="{Binding Model.DisplayName, Mode=OneWay}"/>
+                </Style>
+            </xcad:DockingManager.LayoutItemContainerStyle>
+        </xcad:DockingManager>
     </DockPanel>
 </UserControl>
