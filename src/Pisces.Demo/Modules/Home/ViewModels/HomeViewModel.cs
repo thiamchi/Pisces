@@ -8,7 +8,6 @@ using Pisces.Framework;
 
 namespace Pisces.Demo.Modules.Home.ViewModels
 {
-    [DisplayName("Home View Model")]
     [Export]
     public class HomeViewModel : Document
     {

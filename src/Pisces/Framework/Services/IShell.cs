@@ -9,7 +9,7 @@ namespace Pisces.Framework.Services
         IMenu MainMenu { get; }
 
         ILayoutItem ActiveLayoutItem { get; set; }
-        IDocument SelectedDocument { get; }
+        IDocument ActiveItem { get; }
 
         void OpenDocument(IDocument model);
         void CloseDocument(IDocument document);

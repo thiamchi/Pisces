@@ -46,8 +46,6 @@ namespace Pisces.Modules.Shell.ViewModels
             }
         }
 
-        public IDocument SelectedDocument => throw new NotImplementedException();
-
         public ShellViewModel()
         {
             ((IActivate)this).Activate();
@@ -55,6 +53,9 @@ namespace Pisces.Modules.Shell.ViewModels
 
         protected override void OnViewLoaded(object view)
         {
+            foreach (var module in _modules)
+                module.Initialize();
+
             foreach (var module in _modules)
                 module.PostInitialize();
             base.OnViewLoaded(view);
@@ -69,7 +70,6 @@ namespace Pisces.Modules.Shell.ViewModels
 
                 var currentActiveItem = ActiveItem;
                 base.ActivateItem(item);
-
             }
             finally
             {

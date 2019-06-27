@@ -5,7 +5,16 @@
                      xmlns:cal="http://www.caliburnproject.org"
                      WindowStartupLocation="CenterScreen"
                      WindowState="{Binding WindowState}"
-                     ResizeMode="CanResizeWithGrip">
+                     ResizeMode="CanResizeWithGrip"
+                     Style="{DynamicResource MainWindowStyle}"
+                     Title="{Binding Title}" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="ThemeDictionary"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
         <ContentControl cal:View.Model="{Binding Shell}" />
     </Grid>
