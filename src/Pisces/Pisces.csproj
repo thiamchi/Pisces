@@ -87,6 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="Framework\Commands\Command.cs" />
+    <Compile Include="Framework\Commands\CommandDefinitionBase.cs" />
+    <Compile Include="Framework\Commands\ICommandUiItem.cs" />
     <Compile Include="Framework\Controls\DynamicStyle.cs" />
     <Compile Include="Framework\Document.cs" />
     <Compile Include="Framework\IDocument.cs" />
@@ -109,6 +112,7 @@
     <Compile Include="Modules\MainMenu\IMenuBuilder.cs" />
     <Compile Include="Modules\MainMenu\MenuBuilder.cs" />
     <Compile Include="Modules\MainMenu\MenuDefinitions.cs" />
+    <Compile Include="Modules\MainMenu\Models\CommandMenuItem.cs" />
     <Compile Include="Modules\MainMenu\Models\MenuItemBase.cs" />
     <Compile Include="Modules\MainMenu\Models\MenuItemSeparator.cs" />
     <Compile Include="Modules\MainMenu\Models\MenuModel.cs" />
@@ -135,7 +139,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Framework\Commands\" />
     <Folder Include="Modules\Shell\Controls\" />
     <Folder Include="Resources\" />
     <Folder Include="Themes\VS2013\Controls\Converters\" />
