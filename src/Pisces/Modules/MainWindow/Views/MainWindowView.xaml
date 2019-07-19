@@ -7,6 +7,9 @@
                      WindowState="{Binding WindowState}"
                      ResizeMode="CanResizeWithGrip"
                      Style="{DynamicResource MainWindowStyle}"
+			         WindowCloseButtonStyle="{DynamicResource MetroWindowButtonStyle}"
+			         WindowMinButtonStyle="{DynamicResource MetroWindowButtonStyle}"
+			         WindowMaxButtonStyle="{DynamicResource MetroWindowButtonStyle}"
                      Title="{Binding Title}" >
     <Window.Resources>
         <ResourceDictionary>

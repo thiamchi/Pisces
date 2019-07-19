@@ -5,6 +5,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Controls/Menu.xaml"/>
         <ResourceDictionary Source="Controls/Window.xaml"/>
+        <ResourceDictionary Source="Controls/WindowCommands.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
     <!-- Put color setting here -->
