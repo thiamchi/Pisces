@@ -113,6 +113,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pisces.Modules.MarkdownEditor\Pisces.Modules.MarkdownEditor.csproj">
+      <Project>{696b6778-c60f-4233-bfc3-1ea3b60d14eb}</Project>
+      <Name>Pisces.Modules.MarkdownEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pisces\Pisces.csproj">
       <Project>{2ccedf26-cdb9-45c3-853d-4b30efc2b490}</Project>
       <Name>Pisces</Name>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisces.Demo", "Pisces.Demo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisces", "Pisces\Pisces.csproj", "{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisces.Modules.MarkdownEditor", "Pisces.Modules.MarkdownEditor\Pisces.Modules.MarkdownEditor.csproj", "{696B6778-C60F-4233-BFC3-1EA3B60D14EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CCEDF26-CDB9-45C3-853D-4B30EFC2B490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696B6778-C60F-4233-BFC3-1EA3B60D14EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696B6778-C60F-4233-BFC3-1EA3B60D14EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696B6778-C60F-4233-BFC3-1EA3B60D14EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696B6778-C60F-4233-BFC3-1EA3B60D14EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

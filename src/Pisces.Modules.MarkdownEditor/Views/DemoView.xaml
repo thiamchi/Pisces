@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Pisces.Modules.MarkdownEditor.Views.DemoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:editor="clr-namespace:Pisces.Modules.MarkdownEditor.Controls"
+             xmlns:markdig="clr-namespace:Markdig.Wpf;assembly=Markdig.Wpf"
+             xmlns:local="clr-namespace:Pisces.Modules.MarkdownEditor.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Sample">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <editor:MarkdownEditor Background="Bisque" 
+                            EditorBackground="LightGray" 
+                            AutoUpdateInterval="2000"
+                            IsEnabled="True"
+                            Text="{Binding DemoMd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Hyperlink="{Binding OnHyperlink}"
+                            />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Markdig.Wpf">
+                <markdig:MarkdownViewer Markdown="# This is Markdown.Wpf" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
