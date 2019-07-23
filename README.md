@@ -1,2 +1,2 @@
 # Pisces
-A Caliburn Micro WPF application for IronPython development.
+A Caliburn Micro WPF application for Modular and Multipurpose Usage.
