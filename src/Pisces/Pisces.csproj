@@ -104,6 +104,9 @@
     <Compile Include="Framework\Menus\MenuItemGroupDefinition.cs" />
     <Compile Include="Framework\Menus\TextMenuItemDefinition.cs" />
     <Compile Include="Framework\ModuleBase.cs" />
+    <Compile Include="Framework\PersistedDocument.cs" />
+    <Compile Include="Framework\Services\EditorFileType.cs" />
+    <Compile Include="Framework\Services\IEditorProvider.cs" />
     <Compile Include="Framework\Services\IMainWindow.cs" />
     <Compile Include="Framework\Services\IShell.cs" />
     <Compile Include="Modules\MainMenu\Controls\MenuEx.cs" />

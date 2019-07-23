@@ -46,6 +46,8 @@ namespace Pisces.Modules.Shell.ViewModels
             }
         }
 
+        private bool isClose = false;
+
         public ShellViewModel()
         {
             ((IActivate)this).Activate();
@@ -63,6 +65,8 @@ namespace Pisces.Modules.Shell.ViewModels
 
         public override void ActivateItem(IDocument item)
         {
+            if (isClose) return;
+
             try
             {
                 if (ReferenceEquals(item, ActiveItem))
@@ -84,6 +88,11 @@ namespace Pisces.Modules.Shell.ViewModels
         public void CloseDocument(IDocument document)
         {
             throw new NotImplementedException();
+        }
+
+        protected override void OnDeactivate(bool close)
+        {
+            isClose = true;
         }
 
         public void Close()

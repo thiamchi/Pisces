@@ -15,7 +15,9 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <editor:MarkdownEditor Background="Bisque" 
+                    <editor:MarkdownEditor 
+                            x:Name="editor"
+                            Background="Bisque" 
                             EditorBackground="LightGray" 
                             AutoUpdateInterval="2000"
                             IsEnabled="True"
